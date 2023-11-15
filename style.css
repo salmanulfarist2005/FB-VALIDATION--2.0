@@ -1,0 +1,505 @@
+* {
+        margin: 0px;
+}
+
+.background {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(206, 214, 231);
+}
+
+.fb-navabar {
+        width: 100%;
+        height: 15vh;
+        background-color: #3b5999;
+
+}
+
+.fbTextLogo {
+        width: 14%;
+        height: 9vh;
+        margin-top: 20px;
+        margin-left: 10%;
+}
+
+.email-password-parent-div {
+        display: flex;
+        gap: 30px;
+        float: right;
+        margin-right: 16%;
+        margin-top: 4vh;
+}
+
+.input-label {
+        color: white;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+}
+
+.Forgetten-Account {
+        font-size: 10px;
+        margin-top: 10px;
+        color: rgb(219, 216, 216);
+        font-family: 'Roboto', sans-serif;
+}
+
+#logbutton {
+        height: 23px;
+        margin-top: 15px;
+        color: rgb(90, 109, 151);
+}
+
+#email-input {
+        width: 95%;
+}
+
+#password-input {
+        width: 91%;
+}
+
+
+.people-background {
+        width: 49%;
+        height: 85vh;
+        background-color: rgb(206, 214, 231);
+
+}
+
+.people-background-image {
+        width: 100%;
+        height: 85vh;
+        box-shadow: 10px;
+}
+
+.regstration-div {
+        width: 51%;
+        height: 85vh;
+        background: rgb(218, 219, 219);
+        background: linear-gradient(0deg, rgba(218, 219, 219, 1) 0%, rgba(255, 255, 255, 1) 88%);
+}
+
+.people-regstration-parrent-div {
+        display: flex;
+}
+
+.first-heading {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 13%;
+        font-family: 'Roboto', sans-serif;
+}
+
+.second-headding {
+        font-size: 14px;
+        margin-left: 14%;
+        font-family: 'Roboto', sans-serif;
+}
+
+.full-name {
+        width: 30%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+
+.surname {
+        width: 30%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.mobileoremail {
+        width: 62%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.newpassword {
+        width: 62%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.birthday-label {
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+}
+
+.birthday-date {
+        width: 10%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.birth-month {
+        width: 10%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.birth-year {
+        width: 10%;
+        height: 4vh;
+        border-radius: 5px;
+        border: solid gray 1px;
+}
+
+.form-parent {
+        margin-top: 20px;
+        margin-left: 13%;
+}
+
+.last-p-div {
+        width: 60%;
+        margin-top: 7%;
+        margin-left: 14%;
+}
+
+.finel-p {
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+}
+
+#signup-button {
+        width: 32%;
+        height: 7vh;
+        margin-left: 20%;
+        margin-top: 5%;
+        border-radius: 7px;
+        border: solid gray 1px;
+        background: rgb(4, 85, 19);
+        background: linear-gradient(0deg, rgba(4, 85, 19, 1) 52%, rgba(44, 238, 73, 1) 100%);
+}
+
+.give{
+        border: 1px solid red;
+}
+.com{
+        color: red;
+}
+
+
+@media  (max-width: 576px) {
+
+        .fb-navabar{
+                height: 18vh;
+        }
+        
+                .fbTextLogo{
+                width: 20%;
+                margin-left: 9%;
+        }
+        
+        .email-password-parent-div{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 1vh;
+        }
+        
+        #logbutton{
+                margin-top: -72px;
+                width: 60px;
+                margin-left: 115px;
+        }
+        
+        .people-background{
+                display: none;
+        }
+        
+        .people-background{
+                display: none;
+        }
+        
+        
+        .regstration-div{
+                width: 100%;
+                height: auto;
+        }
+        
+        .form-parent{
+                margin-top: 45px;
+        }
+        
+        .first-heading{
+                font-size: 30px;
+                margin-left: 30px;
+        }
+        
+        .second-headding {
+                font-size: 12px;
+                margin-left: 10%;
+        }
+        
+        #full-name {
+                width: 45%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+        
+        #surname{
+                width: 45%;
+                height: 5vh;
+        }
+        
+        #mobileoremail{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+        
+        #newpassword{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;  
+        }
+        
+        .birthday-label{
+                font-size: 13px;
+        }
+        
+        .birthday-date{
+                width: 20%;
+                margin-left: -11px;
+        }
+        
+        .birth-month{
+                width: 20%; 
+        }
+        
+        .birth-year{
+                width: 20%;
+        }
+        
+        .finel-p{
+                width: 130%;
+        }
+        
+        #signup-button{
+                width: 55%;
+                margin-left: 23%;
+        }
+        
+        }
+        
+        
+        
+        
+        
+        @media  (max-width: 768px) and (min-width:576px) {
+        
+        .fb-navabar{
+                height: 18vh;
+        }
+                
+        .fbTextLogo{
+                width: 30%;
+                margin-left: 9%;
+        }
+                
+        .email-password-parent-div{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 3vh;
+        }
+                
+        #logbutton{
+                margin-top: -72px;
+                width: 60px;
+                margin-left: 115px;
+        }
+                
+        .people-background{
+                display: none;
+        }
+                
+        .people-background{
+                display: none;
+        }
+                
+                
+        .regstration-div{
+                width: 100%;
+                height: auto;
+        }
+                
+        .form-parent{
+                margin-top: 79px;
+        }
+                
+        .first-heading{
+                font-size: 45px;
+                margin-left: 79px;
+        }
+                
+        .second-headding {
+                font-size: 15px;
+                margin-left: 12%;
+        }
+                
+        #full-name {
+                width: 45%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+                
+        #surname{
+                width: 45%;
+                height: 5vh;
+        }
+                
+        #mobileoremail{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+        
+        #newpassword{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;  
+        }
+        
+        .birthday-label{
+                font-size: 13px;
+        }
+        
+        #birthday-date{
+                width: 20%;
+                margin-left: -11px;
+        }
+        
+        #birth-month{
+                width: 20%; 
+        }
+        
+        #birth-year{
+                width: 20%;
+        }
+        
+        .finel-p{
+                width: 130%;
+        }
+        
+        #signup-button{
+                width: 55%;
+                margin-left: 23%;
+        }
+        
+        }
+        
+        
+        
+        @media  (max-width: 1024px) and (min-width:768px) {
+        
+        .fb-navabar{
+                height: 18vh;
+        }
+                
+        .fbTextLogo{
+                width: 30%;
+                margin-left: 9%;
+        }
+                
+        .email-password-parent-div{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 3vh;
+        }
+                
+        #logbutton{
+                margin-top: -72px;
+                width: 60px;
+                margin-left: 115px;
+        }
+                
+        .people-background{
+                display: none;
+        }
+                
+        .people-background{
+                display: none;
+        }
+                
+                
+        .regstration-div{
+                width: 100%;
+                height: auto;
+        }
+                
+        .form-parent{
+                margin-top: 79px;
+        }
+                
+        .first-heading{
+                font-size: 45px;
+                margin-left: 94px;
+                margin-top: 75px;
+        
+        }
+                
+        .second-headding {
+                font-size: 15px;
+                margin-left: 12%;
+        }
+                
+        .full-name {
+                width: 45%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+                
+        .surname{
+                width: 45%;
+                height: 5vh;
+        }
+                
+        .mobileoremail{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;
+        }
+        
+        .newpassword{
+                width: 93%;
+                height: 5vh;
+                margin-left: -15px;  
+        }
+        
+        .birthday-label{
+                font-size: 13px;
+        }
+        
+        #birthday-date{
+                width: 20%;
+                margin-left: -11px;
+        }
+        
+        #birth-month{
+                width: 20%; 
+        }
+        
+        #birth-year{
+                width: 20%;
+        }
+        
+        .finel-p{
+                width: 130%;
+        }
+        
+        #signup-button{
+                width: 55%;
+                margin-left: 23%;
+        }
+        
+        }

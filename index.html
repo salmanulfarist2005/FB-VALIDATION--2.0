@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="background">
+
+        <!-- Start Navbar Section -->
+        <div class="fb-navabar">
+            <img class="fbTextLogo" src="img/f-b text logo.png" alt="">
+            <div class="email-password-parent-div">
+                <div>
+                    <label class="input-label" for="">Email Or Phone</label><br>
+                    <input id="email-input" type="email number">
+                </div>
+                <div>
+                    <label class="input-label" for="">Password</label><br>
+                    <input id="password-input" type="password">
+                    <p class="Forgetten-Account">Forgotten Account?</p>
+                </div>
+                <button id="logbutton">Log in</button>
+            </div>
+        </div>
+        <!-- End Navbar Section -->
+
+        <div class="people-regstration-parrent-div">
+            <div class="people-background">
+                <img class="people-background-image" src="img/fb people (1).png" alt="">
+            </div>
+            <div class="regstration-div">
+                <h1 class="first-heading">Creat an account</h1>
+                <h4 class="second-headding">it's quik and easy.</h4>
+
+                <div class="form-parent">
+                    <input class="full-name" id="full-name" type="text" placeholder="Full Name">
+                    <input class="surname" id="surname" type="text" placeholder="Surname"><br><br>
+                    <input class="mobileoremail" id="mobileoremail" type="email number"
+                        placeholder="Mobile number or email address"><br><br>
+                    <input class="newpassword" id="newpassword" type="password" placeholder="New password"><br><br>
+
+                    <label class="birthday-label" for="">Birthday</label><br>
+                    <select class="birthday-date" name="" id="birthday-date">
+                        <option value="">date</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <select class="birth-month" name="" id="birth-month">
+                        <option value="">month</option>
+                        <option value="jan">jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                    </select>
+                    <select class="birth-year" name="" id="birth-year">
+                        <option value="">year</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                    </select><br><br>
+
+                    <label id="birthday-label" class="birthday-label" for="">Gender</label><br>
+                    <input id="radio-1" type="radio" name="rd">
+                    <label class="birthday-label" for="">Female</label>
+
+                    <input id="radio-2" type="radio" name="rd">
+                    <label class="birthday-label" for="">Male</label>
+
+                    <input id="radio-3" type="radio" name="rd">
+                    <label class="birthday-label" for="">Custom</label>
+                </div>
+
+                <div class="last-p-div">
+                    <p class="finel-p">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.
+                        You may receive SMS notifications from us and can opt out at any time.</p>
+                </div>
+
+                <div>
+                    <button onclick="button()" id="signup-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function button() {
+        let email = document.getElementById("full-name").value;
+        let pass = document.getElementById("surname").value;
+        let Mobile = document.getElementById("mobileoremail").value;
+        let passnew = document.getElementById("newpassword").value;
+        let select1 = document.getElementById("birthday-date").value;
+        let select2 = document.getElementById("birth-month").value;
+        let select3 = document.getElementById("birth-year").value;
+
+        let ac, bc, dc, ec, fc, gc, hc, ic
+
+        if (email == "") {
+            document.getElementById("full-name").classList.add("give")
+            ac = false
+        } else {
+            ac = true
+            document.getElementById("full-name").classList.remove("give")
+        }
+
+        if (pass == "") {
+            document.getElementById("surname").classList.add("give")
+            bc = false;
+        } else {
+            bc = true;
+            document.getElementById("surname").classList.remove("give")
+            
+        }
+
+
+        if (Mobile == "") {
+            document.getElementById("mobileoremail").classList.add("give")
+            dc = false
+        }else{
+            dc = true
+            document.getElementById("mobileoremail").classList.remove("give")
+
+        }
+        if (passnew == "") {
+            document.getElementById("newpassword").classList.add("give")
+            ec = false
+
+        }else{
+            ec = true
+            document.getElementById("newpassword").classList.remove("give")
+        }
+
+        if (!select1) {
+            document.getElementById("birthday-date").classList.add("give")
+            fc = false;
+
+        }else{
+            fc = true
+            document.getElementById("birthday-date").classList.remove("give")
+        }
+
+        if (!select2) {
+            document.getElementById("birth-month").classList.add("give")
+            gc = false
+
+        }else{
+            gc =true;
+            document.getElementById("birth-month").classList.remove("give")
+        }
+
+
+        if (!select3) {
+            document.getElementById("birth-year").classList.add("give")
+            hc = false
+
+        } else{
+            hc  = true;
+            document.getElementById("birth-year").classList.remove("give")
+        }
+        if (document.getElementById("radio-1").checked || document.getElementById("radio-2").checked || document.getElementById("radio-3").checked) {
+            document.getElementById('birthday-label').classList.remove('com')
+            ic = true
+        }else{
+            document.getElementById('birthday-label').classList.add('com')
+            ic = false;
+        }
+       
+
+        if (ac && bc && dc && ec && fc && gc && hc && ic) {
+            window.open("https://oxdu.in")
+        }
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>
